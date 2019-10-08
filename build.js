@@ -27,12 +27,12 @@ function rimraf (folder) {
 
 function generateList (icons) {
   let markdownContent = '# Icon list\n\n';
-  markdownContent += '<table>\n\t<tbody>\n';
+  markdownContent += '<table style="background-color: #333">\n\t<tbody>\n';
   markdownContent += '\t\t<tr>\n';
   let count = 0;
   for (const icon in icons) {
     count++;
-    markdownContent += `\t\t\t<td align="center"><img src="./png-150/${icon}.png" width="100px"/><br/><span>${icon}</span><br/><span>[${icons[icon].tags.join(', ')}]</span></td>\n`;
+    markdownContent += `\t\t\t<td align="center" style="border: 1px solid #111"><img src="./png-150/${icon}.png" width="100px"/><br/><span>${icon}</span><br/><span>[${icons[icon].tags.join(', ')}]</span></td>\n`;
     if (count > 7) {
       markdownContent += '\t\t</tr>\n';
       markdownContent += '\t\t<tr>\n';

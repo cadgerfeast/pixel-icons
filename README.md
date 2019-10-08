@@ -16,9 +16,9 @@ npm install --save @pixel/icons
 
 ## Quick look
 
-<img src="./png-1500/arrows/chevron-left.png" style="width: 50px"/>
-<img src="./png-1500/buildings/home.png" style="width: 50px"/>
-<img src="./png-1500/arrows/chevron-right.png" style="width: 50px"/>
+<img src="./png-1500/chevron-left.png" style="width: 50px"/>
+<img src="./png-1500/home.png" style="width: 50px"/>
+<img src="./png-1500/chevron-right.png" style="width: 50px"/>
 
 See full icon list [here.](./ICONS.md "Full icon list")
 
