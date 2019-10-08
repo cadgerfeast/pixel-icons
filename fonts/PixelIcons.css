@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "PixelIcons";
-	src: url("PixelIcons.eot?4e992db1a25a22e2c72b23a6e9a5d02f?#iefix") format("embedded-opentype"),
-url("PixelIcons.woff2?4e992db1a25a22e2c72b23a6e9a5d02f") format("woff2"),
-url("PixelIcons.woff?4e992db1a25a22e2c72b23a6e9a5d02f") format("woff"),
-url("PixelIcons.ttf?4e992db1a25a22e2c72b23a6e9a5d02f") format("truetype"),
-url("PixelIcons.svg?4e992db1a25a22e2c72b23a6e9a5d02f#PixelIcons") format("svg");
+	src: url("PixelIcons.eot?38b8ec76bbcc3d22b04e3b70cade3d4a?#iefix") format("embedded-opentype"),
+url("PixelIcons.woff2?38b8ec76bbcc3d22b04e3b70cade3d4a") format("woff2"),
+url("PixelIcons.woff?38b8ec76bbcc3d22b04e3b70cade3d4a") format("woff"),
+url("PixelIcons.ttf?38b8ec76bbcc3d22b04e3b70cade3d4a") format("truetype"),
+url("PixelIcons.svg?38b8ec76bbcc3d22b04e3b70cade3d4a#PixelIcons") format("svg");
 }
 
 .pi {

@@ -70,7 +70,7 @@ async function generateSvg (name, src, dest) {
                 colors.push(style);
                 index = colors.indexOf(style);
               } 
-              svgContent += `\t<rect class="color-${index}" x="${j * 10}" y="${i * 10}" width="10" height="10"/>\n`;
+              svgContent += `\t<rect class="pixel-icon-${name} color-${index}" x="${j * 10}" y="${i * 10}" width="10" height="10"/>\n`;
             }
           }
         }
@@ -81,7 +81,7 @@ async function generateSvg (name, src, dest) {
         }
         svgContent += '\t}\n';
         for (let k = 0; k < colors.length; k++) {
-          svgContent += `\t.color-${k} { fill: var(--pixel-icon-${name}-color-${k}); }\n`;
+          svgContent += `\t.pixel-icon-${name}.color-${k} { fill: var(--pixel-icon-${name}-color-${k}); }\n`;
         }
         svgContent += '\t</style>\n</svg>';
         fs.writeFileSync(dest, svgContent);
