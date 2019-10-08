@@ -63,8 +63,8 @@
 	<rect class="color-1" x="100" y="130" width="10" height="10"/>
 	<style>
 	:root {
-		--pixel-icon-chevron-left-color-0: rgba(255,255,255,255);
-		--pixel-icon-chevron-left-color-1: rgba(223,223,223,255);
+		--pixel-icon-chevron-left-color-0: rgba(238,238,238,255);
+		--pixel-icon-chevron-left-color-1: rgba(204,204,204,255);
 	}
 	.color-0 { fill: var(--pixel-icon-chevron-left-color-0); }
 	.color-1 { fill: var(--pixel-icon-chevron-left-color-1); }

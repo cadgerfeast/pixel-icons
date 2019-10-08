@@ -32,7 +32,7 @@ function generateList (icons) {
   let count = 0;
   for (const icon in icons) {
     count++;
-    markdownContent += `\t\t\t<td align="center" bgcolor="#333"><img src="./png-150/${icon}.png" width="100px"/><br/><span>${icon}</span><br/><span>[${icons[icon].tags.join(', ')}]</span></td>\n`;
+    markdownContent += `\t\t\t<td align="center"><img src="./png-150/${icon}.png" width="100px"/><br/><span>${icon}</span><br/><span>[${icons[icon].tags.join(', ')}]</span></td>\n`;
     if (count > 7) {
       markdownContent += '\t\t</tr>\n';
       markdownContent += '\t\t<tr>\n';

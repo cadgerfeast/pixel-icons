@@ -19,9 +19,9 @@ npm install --save @pixel/icons
 <table>
 	<tbody>
 		<tr>
-			<td align="center" bgcolor="#333"><img src="./png-150/chevron-left.png"/></td>
-      <td align="center" bgcolor="#333"><img src="./png-150/home.png"/></td>
-      <td align="center" bgcolor="#333"><img src="./png-150/chevron-right.png"/></td>
+			<td align="center"><img src="./png-150/chevron-left.png"/></td>
+      <td align="center"><img src="./png-150/home.png"/></td>
+      <td align="center"><img src="./png-150/chevron-right.png"/></td>
 	</tbody>
 </table>
 
