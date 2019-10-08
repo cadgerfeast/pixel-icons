@@ -16,9 +16,14 @@ npm install --save @pixel/icons
 
 ## Quick look
 
-<img src="./png-150/chevron-left.png"/>
-<img src="./png-150/home.png"/>
-<img src="./png-150/chevron-right.png"/>
+<table>
+	<tbody>
+		<tr>
+			<td align="center" bgcolor="#333"><img src="./png-150/chevron-left.png"/></td>
+      <td align="center" bgcolor="#333"><img src="./png-150/home.png"/></td>
+      <td align="center" bgcolor="#333"><img src="./png-150/chevron-right.png"/></td>
+	</tbody>
+</table>
 
 See full icon list [here.](./ICONS.md "Full icon list")
 
