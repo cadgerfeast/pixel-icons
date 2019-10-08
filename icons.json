@@ -1,0 +1,34 @@
+{
+  "chevron-left": {
+    "tags": [
+      "arrows"
+    ]
+  },
+  "chevron-right": {
+    "tags": [
+      "arrows"
+    ]
+  },
+  "code": {
+    "tags": [
+      "code"
+    ]
+  },
+  "eye": {
+    "tags": [
+      "anatomy"
+    ]
+  },
+  "home": {
+    "tags": [
+      "buildings",
+      "toto"
+    ]
+  },
+  "internet-explorer": {
+    "tags": [
+      "code",
+      "browsers"
+    ]
+  }
+}

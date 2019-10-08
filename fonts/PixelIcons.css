@@ -1,0 +1,38 @@
+@font-face {
+	font-family: "PixelIcons";
+	src: url("PixelIcons.eot?0185e71fab4771e08f26f29578ed678a?#iefix") format("embedded-opentype"),
+url("PixelIcons.woff2?0185e71fab4771e08f26f29578ed678a") format("woff2"),
+url("PixelIcons.woff?0185e71fab4771e08f26f29578ed678a") format("woff"),
+url("PixelIcons.ttf?0185e71fab4771e08f26f29578ed678a") format("truetype"),
+url("PixelIcons.svg?0185e71fab4771e08f26f29578ed678a#PixelIcons") format("svg");
+}
+
+.pi {
+	line-height: 1;
+}
+
+.pi:before {
+	font-family: PixelIcons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.pi-internet-explorer:before {
+	content: "\f101";
+}
+.pi-home:before {
+	content: "\f102";
+}
+.pi-eye:before {
+	content: "\f103";
+}
+.pi-code:before {
+	content: "\f104";
+}
+.pi-chevron-right:before {
+	content: "\f105";
+}
+.pi-chevron-left:before {
+	content: "\f106";
+}
