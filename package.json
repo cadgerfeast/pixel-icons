@@ -1,6 +1,6 @@
 {
   "name": "@pixel/icons",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/icons.json",
   "types": "dist/icons.d.ts",
   "scripts": {
@@ -29,10 +29,10 @@
     "svg"
   ],
   "devDependencies": {
-    "coveralls": "^3.0.6",
-    "eslint": "^6.2.2",
-    "jest": "^24.9.0",
-    "sharp": "^0.23.0",
-    "webfonts-generator": "^0.4.0"
+    "coveralls": "3.0.6",
+    "eslint": "6.2.2",
+    "jest": "24.9.0",
+    "sharp": "0.23.0",
+    "webfonts-generator": "0.4.0"
   }
 }

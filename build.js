@@ -21,7 +21,7 @@ declare interface PixelIcon {
   data: PixelSvgData
 }
 
-declare module 'icons.json' {
+declare module '@pixel/icons' {
   const value: { [icon in PixelIconList]: PixelIcon; };
   export default value;
 }`;
