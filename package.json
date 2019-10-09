@@ -1,7 +1,8 @@
 {
   "name": "@pixel/icons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/icons.json",
+  "types": "dist/icons.d.ts",
   "scripts": {
     "build": "node build.js",
     "lint": "eslint .",
@@ -20,6 +21,7 @@
     "url": "git+https://github.com/cadgerfeast/pixel-icons.git"
   },
   "files": [
+    "dist",
     "fonts",
     "png-15",
     "png-150",

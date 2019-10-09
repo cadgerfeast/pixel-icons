@@ -12,6 +12,20 @@ const distPath = path.resolve(__dirname, 'dist');
 
 const icons = require('./icons.json');
 
+let declaration = `declare interface PixelSvgData {
+  svg: string;
+}
+
+declare interface PixelIcon {
+  tags: string[];
+  data: PixelSvgData
+}
+
+declare module 'icons.json' {
+  const value: { [icon in PixelIconList]: PixelIcon; };
+  export default value;
+}`;
+
 function rimraf (folder) {
   if (fs.existsSync(folder)) {
     fs.readdirSync(folder).forEach((entry) => {
@@ -116,16 +130,21 @@ const build = async function () {
         iconList.splice(i, 1);
       }
     }
+    declaration += '\n\ndeclare enum PixelIconList {';
     for (const icon in finalIconList) {
       const { svgIcon, svgData } = await createIcon(`${icon}.png`, iconsSvgPath, icons150Path, icons1500Path);
-      finalIconList[icon].svg = svgData;
+      finalIconList[icon].data = svgData;
       svgFiles.push(svgIcon);
+      declaration += `\n\t'${icon}' = '${icon}',`;
     }
+    declaration = declaration.slice(0, -1);
+    declaration += '\n}';
     // Building icon list
     if (fs.existsSync(distPath)) {
       rimraf(distPath);
     }
     fs.mkdirSync(distPath);
+    fs.writeFileSync(path.resolve(distPath, 'icons.d.ts'), declaration);
     fs.writeFileSync(path.resolve(distPath, 'icons.json'), JSON.stringify(finalIconList, null, 2));
     // Building docs
     generateList(finalIconList);
