@@ -8,6 +8,7 @@ const icons150Path = path.resolve(__dirname, 'png-150');
 const icons1500Path = path.resolve(__dirname, 'png-1500');
 const iconsSvgPath = path.resolve(__dirname, 'svg');
 const fontsPath = path.resolve(__dirname, 'fonts');
+const distPath = path.resolve(__dirname, 'dist');
 
 const icons = require('./icons.json');
 
@@ -58,6 +59,7 @@ async function generateSvg (name, src, dest) {
     sharp(src).raw()
       .toBuffer((err, buffer, img) => {
         if (err) { reject(err); }
+        const svgData = {};
         let svgContent = `<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" width="${img.width * 10}" height="${img.height * 10}">\n`;
         const colors = [];
         for (let i = 0; i < img.height; i++) {
@@ -70,22 +72,17 @@ async function generateSvg (name, src, dest) {
                 colors.push(style);
                 index = colors.indexOf(style);
               } 
-              svgContent += `\t<rect class="pixel-icon-${name} color-${index}" x="${j * 10}" y="${i * 10}" width="10" height="10"/>\n`;
+              svgContent += `\t<rect fill="${style}" x="${j * 10}" y="${i * 10}" width="10" height="10"/>\n`;
             }
           }
         }
-        svgContent += '\t<style>\n';
-        svgContent += '\t:root {\n';
         for (let k = 0; k < colors.length; k++) {
-          svgContent += `\t\t--pixel-icon-${name}-color-${k}: ${colors[k]};\n`;
+          svgData[`color-${k}`] = colors[k];
         }
-        svgContent += '\t}\n';
-        for (let k = 0; k < colors.length; k++) {
-          svgContent += `\t.pixel-icon-${name}.color-${k} { fill: var(--pixel-icon-${name}-color-${k}); }\n`;
-        }
-        svgContent += '\t</style>\n</svg>';
+        svgContent += '</svg>';
+        svgData.svg = svgContent;
         fs.writeFileSync(dest, svgContent);
-        resolve(dest);
+        resolve({ svgIcon: dest, svgData: svgData });
       });
   });
 }
@@ -120,9 +117,17 @@ const build = async function () {
       }
     }
     for (const icon in finalIconList) {
-      const svgIcon = await createIcon(`${icon}.png`, iconsSvgPath, icons150Path, icons1500Path);
+      const { svgIcon, svgData } = await createIcon(`${icon}.png`, iconsSvgPath, icons150Path, icons1500Path);
+      finalIconList[icon].svg = svgData;
       svgFiles.push(svgIcon);
     }
+    // Building icon list
+    if (fs.existsSync(distPath)) {
+      rimraf(distPath);
+    }
+    fs.mkdirSync(distPath);
+    fs.writeFileSync(path.resolve(distPath, 'icons.json'), JSON.stringify(finalIconList, null, 2));
+    // Building docs
     generateList(finalIconList);
     // Building fonts
     if (!fs.existsSync(fontsPath)) {
