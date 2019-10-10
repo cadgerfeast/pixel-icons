@@ -14,6 +14,7 @@ const icons = require('./icons.json');
 
 let declaration = `declare interface PixelSvgData {
   svg: string;
+  colors: string[];
 }
 
 declare interface PixelIcon {
@@ -73,7 +74,9 @@ async function generateSvg (name, src, dest) {
     sharp(src).raw()
       .toBuffer((err, buffer, img) => {
         if (err) { reject(err); }
-        const svgData = {};
+        const svgData = {
+          colors: []
+        };
         let svgContent = `<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" width="${img.width * 10}" height="${img.height * 10}">\n`;
         const colors = [];
         for (let i = 0; i < img.height; i++) {
@@ -91,7 +94,7 @@ async function generateSvg (name, src, dest) {
           }
         }
         for (let k = 0; k < colors.length; k++) {
-          svgData[`color-${k}`] = colors[k];
+          svgData.colors.push(colors[k]);
         }
         svgContent += '</svg>';
         svgData.svg = svgContent;
