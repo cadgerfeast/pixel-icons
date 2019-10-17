@@ -1,4 +1,9 @@
 {
+  "chat": {
+    "tags": [
+      "media"
+    ]
+  },
   "chevron-left": {
     "tags": [
       "arrows"
@@ -21,14 +26,18 @@
   },
   "home": {
     "tags": [
-      "buildings",
-      "toto"
+      "buildings"
     ]
   },
   "internet-explorer": {
     "tags": [
       "code",
       "browsers"
+    ]
+  },
+  "phone": {
+    "tags": [
+      "media"
     ]
   }
 }

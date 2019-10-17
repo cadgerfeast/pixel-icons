@@ -1,6 +1,6 @@
 {
   "name": "@pixel/icons",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "dist/icons.json",
   "types": "dist/icons.d.ts",
   "scripts": {
