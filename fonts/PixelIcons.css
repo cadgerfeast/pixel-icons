@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "PixelIcons";
-	src: url("PixelIcons.eot?7cc6a735558ac4d7255abbd93c5d2c6e?#iefix") format("embedded-opentype"),
-url("PixelIcons.woff2?7cc6a735558ac4d7255abbd93c5d2c6e") format("woff2"),
-url("PixelIcons.woff?7cc6a735558ac4d7255abbd93c5d2c6e") format("woff"),
-url("PixelIcons.ttf?7cc6a735558ac4d7255abbd93c5d2c6e") format("truetype"),
-url("PixelIcons.svg?7cc6a735558ac4d7255abbd93c5d2c6e#PixelIcons") format("svg");
+	src: url("PixelIcons.eot?0356093b11b4c7bd514b92a0295fb7a7?#iefix") format("embedded-opentype"),
+url("PixelIcons.woff2?0356093b11b4c7bd514b92a0295fb7a7") format("woff2"),
+url("PixelIcons.woff?0356093b11b4c7bd514b92a0295fb7a7") format("woff"),
+url("PixelIcons.ttf?0356093b11b4c7bd514b92a0295fb7a7") format("truetype"),
+url("PixelIcons.svg?0356093b11b4c7bd514b92a0295fb7a7#PixelIcons") format("svg");
 }
 
 .pi {
@@ -18,27 +18,30 @@ url("PixelIcons.svg?7cc6a735558ac4d7255abbd93c5d2c6e#PixelIcons") format("svg");
 	vertical-align: top;
 }
 
-.pi-phone:before {
+.pi-pipe-top:before {
 	content: "\f101";
 }
-.pi-internet-explorer:before {
+.pi-phone:before {
 	content: "\f102";
 }
-.pi-home:before {
+.pi-internet-explorer:before {
 	content: "\f103";
 }
-.pi-eye:before {
+.pi-home:before {
 	content: "\f104";
 }
-.pi-code:before {
+.pi-eye:before {
 	content: "\f105";
 }
-.pi-chevron-right:before {
+.pi-code:before {
 	content: "\f106";
 }
-.pi-chevron-left:before {
+.pi-chevron-right:before {
 	content: "\f107";
 }
-.pi-chat:before {
+.pi-chevron-left:before {
 	content: "\f108";
+}
+.pi-chat:before {
+	content: "\f109";
 }
