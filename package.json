@@ -6,8 +6,7 @@
   "scripts": {
     "build": "node build.js",
     "lint": "eslint .",
-    "test": "jest",
-    "coveralls": "npm run lint && npm run test && cat ./coverage/lcov.info | coveralls"
+    "test": "jest"
   },
   "keywords": [
     "pixel",
@@ -29,10 +28,9 @@
     "svg"
   ],
   "devDependencies": {
-    "coveralls": "3.0.6",
-    "eslint": "6.2.2",
-    "jest": "24.9.0",
-    "sharp": "0.23.0",
+    "eslint": "7.4.0",
+    "jest": "26.1.0",
+    "sharp": "0.25.4",
     "webfonts-generator": "0.4.0"
   }
 }
