@@ -21,8 +21,8 @@ jobs:
     - name: Fix Coverage Paths
       working-directory: ./coverage
       run: |
-        sed -i 's/\/home\/runner\/work\/pixel-components\/pixel-components\//\/github\/workspace\//g' lcov.info
-        sed -i 's/\/home\/runner\/work\/pixel-components\/pixel-components\//\/github\/workspace\//g' clover.xml
+        sed -i 's/\/home\/runner\/work\/pixel-icons\/pixel-icons\//\/github\/workspace\//g' lcov.info
+        sed -i 's/\/home\/runner\/work\/pixel-icons\/pixel-icons\//\/github\/workspace\//g' clover.xml
     - name: Sonar
       uses: sonarsource/sonarcloud-github-action@master
       env:
