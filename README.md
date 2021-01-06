@@ -1,9 +1,9 @@
 # @pixel/icons
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=cadgerfeast_pixel-icons&metric=alert_status)](https://sonarcloud.io/dashboard?id=cadgerfeast_pixel-icons)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=cadgerfeast_pixel-icons&metric=coverage)](https://sonarcloud.io/dashboard?id=cadgerfeast_pixel-icons)
 [![Version](https://badge.fury.io/js/%40pixel%2Ficons.svg)](https://www.npmjs.com/package/@pixel/icons)
-[![Build](https://travis-ci.org/cadgerfeast/pixel-icons.svg?branch=master)](https://travis-ci.org/cadgerfeast/pixel-icons)
 [![Downloads](https://img.shields.io/npm/dt/@pixel/icons.svg)](https://www.npmjs.com/package/@pixel/icons)
-[![Coverage Status](https://coveralls.io/repos/github/cadgerfeast/pixel-icons/badge.svg?branch=master)](https://coveralls.io/github/cadgerfeast/pixel-icons?branch=master)
 [![License](https://img.shields.io/npm/l/@pixel/icons.svg)](https://github.com/cadgerfeast/pixel-icons/blob/master/LICENSE)
 
 > Pixel icons & font sprite.
@@ -19,9 +19,9 @@ npm install --save @pixel/icons
 <table>
 	<tbody>
 		<tr>
-			<td align="center"><img src="./png-150/chevron-left.png"/></td>
-      <td align="center"><img src="./png-150/home.png"/></td>
-      <td align="center"><img src="./png-150/chevron-right.png"/></td>
+			<td align="center"><img src="./png-150/home.png"/></td>
+      <td align="center"><img src="./png-150/dino.png"/></td>
+      <td align="center"><img src="./png-150/floppy-disk.png"/></td>
 	</tbody>
 </table>
 

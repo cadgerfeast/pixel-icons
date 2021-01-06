@@ -41,12 +41,12 @@ function rimraf (folder) {
   }
 }
 
-function generateList (icons) {
+function generateList (list) {
   let markdownContent = '# Icon list\n\n';
   markdownContent += '<table>\n\t<tbody>\n';
   markdownContent += '\t\t<tr>\n';
   let count = 0;
-  for (const icon in icons) {
+  for (const icon in list) {
     count++;
     markdownContent += `\t\t\t<td align="center"><img src="./png-150/${icon}.png" width="100px"/><br/><span>${icon}</span><br/><span>[${icons[icon].tags.join(', ')}]</span></td>\n`;
     if (count > 7) {
@@ -104,7 +104,7 @@ async function generateSvg (name, src, dest) {
   });
 }
 
-const build = async function () {
+(async function () {
   try {
     rimraf(iconsSvgPath);
     rimraf(icons150Path);
@@ -170,10 +170,4 @@ const build = async function () {
   } catch (error) {
     console.error(error);
   }
-};
-
-if (exports && module && module.parent) {
-  exports.build = build;
-} else {
-  build();
-}
+})();

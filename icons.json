@@ -14,14 +14,29 @@
       "arrows"
     ]
   },
+  "circuit": {
+    "tags": [
+      "electrical"
+    ]
+  },
   "code": {
     "tags": [
       "code"
     ]
   },
+  "dino": {
+    "tags": [
+      "animal"
+    ]
+  },
   "eye": {
     "tags": [
       "anatomy"
+    ]
+  },
+  "floppy-disk": {
+    "tags": [
+      "storage"
     ]
   },
   "home": {
@@ -43,6 +58,17 @@
   "pipe-top": {
     "tags": [
       "mario"
+    ]
+  },
+  "pizza-slice": {
+    "tags": [
+      "food"
+    ]
+  },
+  "refresh": {
+    "tags": [
+      "arrows",
+      "browsers"
     ]
   }
 }
