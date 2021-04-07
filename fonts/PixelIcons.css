@@ -1,74 +1,37 @@
 @font-face {
-	font-family: "PixelIcons";
-	src: url("PixelIcons.eot?86233494ff5ee1c078fe18f7d911f266?#iefix") format("embedded-opentype"),
-url("PixelIcons.woff2?86233494ff5ee1c078fe18f7d911f266") format("woff2"),
-url("PixelIcons.woff?86233494ff5ee1c078fe18f7d911f266") format("woff"),
-url("PixelIcons.ttf?86233494ff5ee1c078fe18f7d911f266") format("truetype"),
-url("PixelIcons.svg?86233494ff5ee1c078fe18f7d911f266#PixelIcons") format("svg");
+  font-family: "PixelIcons";
+  src: url('PixelIcons.eot?t=1617800469301'); /* IE9*/
+  src: url('PixelIcons.eot?t=1617800469301#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("PixelIcons.woff2?t=1617800469301") format("woff2"),
+  url("PixelIcons.woff?t=1617800469301") format("woff"),
+  url('PixelIcons.ttf?t=1617800469301') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('PixelIcons.svg?t=1617800469301#PixelIcons') format('svg'); /* iOS 4.1- */
 }
 
-.pi {
-	line-height: 1;
+[class^="pi-"], [class*=" pi-"] {
+  font-family: 'PixelIcons' !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.pi:before {
-	font-family: PixelIcons !important;
-	font-style: normal;
-	font-weight: normal !important;
-	vertical-align: top;
-}
 
-.pi-silver-coin:before {
-	content: "\f101";
-}
-.pi-refresh:before {
-	content: "\f102";
-}
-.pi-pizza-slice:before {
-	content: "\f103";
-}
-.pi-pipe-top:before {
-	content: "\f104";
-}
-.pi-phone:before {
-	content: "\f105";
-}
-.pi-internet-explorer:before {
-	content: "\f106";
-}
-.pi-home:before {
-	content: "\f107";
-}
-.pi-gold-coin:before {
-	content: "\f108";
-}
-.pi-floppy-disk:before {
-	content: "\f109";
-}
-.pi-eye:before {
-	content: "\f10a";
-}
-.pi-dino:before {
-	content: "\f10b";
-}
-.pi-diamond:before {
-	content: "\f10c";
-}
-.pi-code:before {
-	content: "\f10d";
-}
-.pi-circuit:before {
-	content: "\f10e";
-}
-.pi-chevron-right:before {
-	content: "\f10f";
-}
-.pi-chevron-left:before {
-	content: "\f110";
-}
-.pi-chat:before {
-	content: "\f111";
-}
-.pi-bronze-coin:before {
-	content: "\f112";
-}
+.pi-bronze-coin:before { content: "\ea01"; }
+.pi-chat:before { content: "\ea02"; }
+.pi-chevron-left:before { content: "\ea03"; }
+.pi-chevron-right:before { content: "\ea04"; }
+.pi-circuit:before { content: "\ea05"; }
+.pi-code:before { content: "\ea06"; }
+.pi-diamond:before { content: "\ea07"; }
+.pi-dino:before { content: "\ea08"; }
+.pi-eye:before { content: "\ea09"; }
+.pi-floppy-disk:before { content: "\ea0a"; }
+.pi-gold-coin:before { content: "\ea0b"; }
+.pi-home:before { content: "\ea0c"; }
+.pi-internet-explorer:before { content: "\ea0d"; }
+.pi-phone:before { content: "\ea0e"; }
+.pi-pipe-top:before { content: "\ea0f"; }
+.pi-pizza-slice:before { content: "\ea10"; }
+.pi-refresh:before { content: "\ea11"; }
+.pi-silver-coin:before { content: "\ea12"; }
