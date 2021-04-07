@@ -1,10 +1,16 @@
 # Changelog
 
-## [0.0.11](https://github.com/cadgerfeast/pixel-icons/compare/0.0.10...0.0.11)
+## [0.0.12](https://github.com/cadgerfeast/pixel-icons/compare/0.0.11...0.0.12)
+
+- re-generate fonts [`34e8bf6`](https://github.com/cadgerfeast/pixel-icons/commit/34e8bf6f4823f370ce977b8b23174a83dccb290f)
+- set font size default to 30px [`2e1b895`](https://github.com/cadgerfeast/pixel-icons/commit/2e1b895ff14b07c89cb5cf1daa51b58a99f7a405)
+
+## [0.0.11](https://github.com/cadgerfeast/pixel-icons/compare/0.0.10...0.0.11) (2021-04-07)
 
 - bump version 0.0.11 [`f5076a7`](https://github.com/cadgerfeast/pixel-icons/commit/f5076a758d316ac1db9dd2ae4ca004f0a5fae562)
 - unit test fixes [`3896226`](https://github.com/cadgerfeast/pixel-icons/commit/3896226680c4571926449bc47d2b75e89bc3c9e0)
 - update build [`4903723`](https://github.com/cadgerfeast/pixel-icons/commit/49037234a08ccd01f7186a1df593e9455937faac)
+- Release @pixel/icons@0.0.11 [`e83384d`](https://github.com/cadgerfeast/pixel-icons/commit/e83384df1ef7f78f4e0614ec75186d914b74a63e)
 
 ## 0.0.10 (2021-04-07)
 
