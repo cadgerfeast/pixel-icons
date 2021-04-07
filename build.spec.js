@@ -1,15 +1,12 @@
-const delay = function (ms = 1) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve();
-    }, ms);
-  });
-};
+const svgtofont = require('svgtofont');
+jest.mock('svgtofont');
 
 describe('build', () => {
-  it('should build fonts', async () => {
-    require('./build');
-    await delay(5000);
-    expect(true).toEqual(true);
+  it('should build fonts', (done) => {
+    const builder = require('./build');
+    builder.main().then(() => {
+      expect(svgtofont).toHaveBeenCalled();
+      done();
+    });
   });
 });

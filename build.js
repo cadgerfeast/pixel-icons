@@ -40,6 +40,7 @@ function rimraf (folder) {
     fs.rmdirSync(folder);
   }
 }
+module.exports.rimraf = rimraf;
 
 function generateList (list) {
   let markdownContent = '# Icon list\n\n';
@@ -104,7 +105,7 @@ async function generateSvg (name, src, dest) {
   });
 }
 
-(async function () {
+async function main () {
   try {
     rimraf(iconsSvgPath);
     rimraf(icons150Path);
@@ -167,4 +168,9 @@ async function generateSvg (name, src, dest) {
   } catch (error) {
     console.error(error);
   }
-})();
+}
+module.exports.main = main;
+
+if (require.main === module) {
+  main();
+}
