@@ -163,7 +163,9 @@ async function main () {
       dist: fontsPath,
       fontName: 'PixelIcons',
       classNamePrefix: 'pi',
-      css: true
+      css: {
+        fontSize: '30px'
+      }
     });
   } catch (error) {
     console.error(error);
