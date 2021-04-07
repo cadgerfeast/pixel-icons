@@ -1,4 +1,9 @@
 {
+  "bronze-coin": {
+    "tags": [
+      "currency"
+    ]
+  },
   "chat": {
     "tags": [
       "media"
@@ -24,6 +29,11 @@
       "code"
     ]
   },
+  "diamond": {
+    "tags": [
+      "currency"
+    ]
+  },
   "dino": {
     "tags": [
       "animal"
@@ -37,6 +47,11 @@
   "floppy-disk": {
     "tags": [
       "storage"
+    ]
+  },
+  "gold-coin": {
+    "tags": [
+      "currency"
     ]
   },
   "home": {
@@ -69,6 +84,11 @@
     "tags": [
       "arrows",
       "browsers"
+    ]
+  },
+  "silver-coin": {
+    "tags": [
+      "currency"
     ]
   }
 }

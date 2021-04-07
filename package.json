@@ -1,6 +1,7 @@
 {
   "name": "@pixel/icons",
-  "version": "0.0.9",
+  "description": "Pixel Styled Icons",
+  "version": "0.0.10",
   "main": "dist/icons.json",
   "types": "dist/icons.d.ts",
   "scripts": {
@@ -18,6 +19,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cadgerfeast/pixel-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cadgerfeast/pixel-icons/issues"
   },
   "files": [
     "dist",

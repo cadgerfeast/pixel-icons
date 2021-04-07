@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "PixelIcons";
-	src: url("PixelIcons.eot?328d74ce7d2827fa3a84e13c206db3bf?#iefix") format("embedded-opentype"),
-url("PixelIcons.woff2?328d74ce7d2827fa3a84e13c206db3bf") format("woff2"),
-url("PixelIcons.woff?328d74ce7d2827fa3a84e13c206db3bf") format("woff"),
-url("PixelIcons.ttf?328d74ce7d2827fa3a84e13c206db3bf") format("truetype"),
-url("PixelIcons.svg?328d74ce7d2827fa3a84e13c206db3bf#PixelIcons") format("svg");
+	src: url("PixelIcons.eot?1ab8d8e2f2a2ba419c287e0fafab119d?#iefix") format("embedded-opentype"),
+url("PixelIcons.woff2?1ab8d8e2f2a2ba419c287e0fafab119d") format("woff2"),
+url("PixelIcons.woff?1ab8d8e2f2a2ba419c287e0fafab119d") format("woff"),
+url("PixelIcons.ttf?1ab8d8e2f2a2ba419c287e0fafab119d") format("truetype"),
+url("PixelIcons.svg?1ab8d8e2f2a2ba419c287e0fafab119d#PixelIcons") format("svg");
 }
 
 .pi {
@@ -18,45 +18,57 @@ url("PixelIcons.svg?328d74ce7d2827fa3a84e13c206db3bf#PixelIcons") format("svg");
 	vertical-align: top;
 }
 
-.pi-refresh:before {
+.pi-silver-coin:before {
 	content: "\f101";
 }
-.pi-pizza-slice:before {
+.pi-refresh:before {
 	content: "\f102";
 }
-.pi-pipe-top:before {
+.pi-pizza-slice:before {
 	content: "\f103";
 }
-.pi-phone:before {
+.pi-pipe-top:before {
 	content: "\f104";
 }
-.pi-internet-explorer:before {
+.pi-phone:before {
 	content: "\f105";
 }
-.pi-home:before {
+.pi-internet-explorer:before {
 	content: "\f106";
 }
-.pi-floppy-disk:before {
+.pi-home:before {
 	content: "\f107";
 }
-.pi-eye:before {
+.pi-gold-coin:before {
 	content: "\f108";
 }
-.pi-dino:before {
+.pi-floppy-disk:before {
 	content: "\f109";
 }
-.pi-code:before {
+.pi-eye:before {
 	content: "\f10a";
 }
-.pi-circuit:before {
+.pi-dino:before {
 	content: "\f10b";
 }
-.pi-chevron-right:before {
+.pi-diamond:before {
 	content: "\f10c";
 }
-.pi-chevron-left:before {
+.pi-code:before {
 	content: "\f10d";
 }
-.pi-chat:before {
+.pi-circuit:before {
 	content: "\f10e";
+}
+.pi-chevron-right:before {
+	content: "\f10f";
+}
+.pi-chevron-left:before {
+	content: "\f110";
+}
+.pi-chat:before {
+	content: "\f111";
+}
+.pi-bronze-coin:before {
+	content: "\f112";
 }
