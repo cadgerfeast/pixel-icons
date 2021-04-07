@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
-const webfontsGenerator = require('webfonts-generator');
+const svgtofont = require('svgtofont');
 
 const icons15Path = path.resolve(__dirname, 'png-15');
 const icons150Path = path.resolve(__dirname, 'png-150');
@@ -157,15 +157,12 @@ async function generateSvg (name, src, dest) {
     } else {
       rimraf(fontsPath);
     }
-    webfontsGenerator({
-      files: svgFiles,
-      dest: fontsPath,
+    svgtofont({
+      src: iconsSvgPath,
+      dist: fontsPath,
       fontName: 'PixelIcons',
-      types: ['eot', 'woff2', 'woff', 'ttf', 'svg'],
-      templateOptions: {
-        classPrefix: 'pi-',
-        baseSelector: '.pi'
-      }
+      classNamePrefix: 'pi',
+      css: true
     });
   } catch (error) {
     console.error(error);
