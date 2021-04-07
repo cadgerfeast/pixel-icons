@@ -1,0 +1,7 @@
+organization=cadgerfeast-github
+projectKey=cadgerfeast_pixel-icons
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.18955
+dashboardUrl=https://sonarcloud.io/dashboard?id=cadgerfeast_pixel-icons&branch=master
+ceTaskId=AXisXL4nbeqxjX0sB6Sl
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXisXL4nbeqxjX0sB6Sl
