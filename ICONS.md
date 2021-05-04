@@ -17,12 +17,13 @@
 			<td align="center"><img src="./png-150/eye.png" width="100px"/><br/><span>eye</span><br/><span>[anatomy]</span></td>
 			<td align="center"><img src="./png-150/dino.png" width="100px"/><br/><span>dino</span><br/><span>[animal]</span></td>
 			<td align="center"><img src="./png-150/diamond.png" width="100px"/><br/><span>diamond</span><br/><span>[currency]</span></td>
+			<td align="center"><img src="./png-150/cross.png" width="100px"/><br/><span>cross</span><br/><span>[mathematics]</span></td>
 			<td align="center"><img src="./png-150/code.png" width="100px"/><br/><span>code</span><br/><span>[code]</span></td>
 			<td align="center"><img src="./png-150/circuit.png" width="100px"/><br/><span>circuit</span><br/><span>[electrical]</span></td>
 			<td align="center"><img src="./png-150/chevron-right.png" width="100px"/><br/><span>chevron-right</span><br/><span>[arrows]</span></td>
-			<td align="center"><img src="./png-150/chevron-left.png" width="100px"/><br/><span>chevron-left</span><br/><span>[arrows]</span></td>
 		</tr>
 		<tr>
+			<td align="center"><img src="./png-150/chevron-left.png" width="100px"/><br/><span>chevron-left</span><br/><span>[arrows]</span></td>
 			<td align="center"><img src="./png-150/chat.png" width="100px"/><br/><span>chat</span><br/><span>[media]</span></td>
 			<td align="center"><img src="./png-150/bronze-coin.png" width="100px"/><br/><span>bronze-coin</span><br/><span>[currency]</span></td>
 	</tbody>
