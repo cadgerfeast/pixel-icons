@@ -1,7 +1,13 @@
 # Changelog
 
-## [0.0.12](https://github.com/cadgerfeast/pixel-icons/compare/0.0.11...0.0.12)
+## [0.0.13](https://github.com/cadgerfeast/pixel-icons/compare/0.0.12...0.0.13)
 
+- update build [`7c8bab8`](https://github.com/cadgerfeast/pixel-icons/commit/7c8bab8f590a28eec3e14b020ceaf35856e83499)
+- add cross icon, bump version 0.13.0 [`273798b`](https://github.com/cadgerfeast/pixel-icons/commit/273798baba68f692f29626936d0408eb7573048f)
+
+## [0.0.12](https://github.com/cadgerfeast/pixel-icons/compare/0.0.11...0.0.12) (2021-04-07)
+
+- Release @pixel/icons@0.0.12 [`9cc38bb`](https://github.com/cadgerfeast/pixel-icons/commit/9cc38bba3fe45f6652e7a77ec95d1edb262ffc5c)
 - re-generate fonts [`34e8bf6`](https://github.com/cadgerfeast/pixel-icons/commit/34e8bf6f4823f370ce977b8b23174a83dccb290f)
 - set font size default to 30px [`2e1b895`](https://github.com/cadgerfeast/pixel-icons/commit/2e1b895ff14b07c89cb5cf1daa51b58a99f7a405)
 
