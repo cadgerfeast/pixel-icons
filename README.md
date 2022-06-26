@@ -23,7 +23,7 @@ npm install --save @pixel/icons
       			<td align="center"><img src="./png-150/dino.png"/></td>
       			<td align="center"><img src="./png-150/floppy-disk.png"/></td>
       			<td align="center"><img src="./png-150/internet-explorer.png"/></td>
-			
+		</tr>	
 	</tbody>
 </table>
 
