@@ -20,8 +20,10 @@ npm install --save @pixel/icons
 	<tbody>
 		<tr>
 			<td align="center"><img src="./png-150/home.png"/></td>
-      <td align="center"><img src="./png-150/dino.png"/></td>
-      <td align="center"><img src="./png-150/floppy-disk.png"/></td>
+      			<td align="center"><img src="./png-150/dino.png"/></td>
+      			<td align="center"><img src="./png-150/floppy-disk.png"/></td>
+      			<td align="center"><img src="./png-150/internet-explorer.png"/></td>
+			
 	</tbody>
 </table>
 
