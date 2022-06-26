@@ -26,5 +26,17 @@
 			<td align="center"><img src="./png-150/chevron-left.png" width="100px"/><br/><span>chevron-left</span><br/><span>[arrows]</span></td>
 			<td align="center"><img src="./png-150/chat.png" width="100px"/><br/><span>chat</span><br/><span>[media]</span></td>
 			<td align="center"><img src="./png-150/bronze-coin.png" width="100px"/><br/><span>bronze-coin</span><br/><span>[currency]</span></td>
+			<td align="center"><img src="./png-150/facebook.png" width="100px"/><br/><span>facebook</span><br/><span>[icon]</span></td>
+			<td align="center"><img src="./png-150/github.png" width="100px"/><br/><span>github</span><br/><span>[icon]</span></td>
+			<td align="center"><img src="./png-150/linkedin.png" width="100px"/><br/><span>linkedin</span><br/><span>[icon]</span></td>
+			<td align="center"><img src="./png-150/twitter.png" width="100px"/><br/><span>twitter</span><br/><span>[icon]</span></td>
+			<td align="center"><img src="./png-150/skull.png" width="100px"/><br/><span>skull</span><br/><span>[head]</span></td>
+		</tr>
+		<tr>
+			<td align="center"><img src="./png-150/whatsapp.png" width="100px"/><br/><span>whatsapp</span><br/><span>[icon]</span></td>
+			<td align="center"><img src="./png-150/youtube.png" width="100px"/><br/><span>youtube</span><br/><span>[icon]</span></td>
+
+		
+
 	</tbody>
 </table>
