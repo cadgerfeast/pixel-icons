@@ -67,7 +67,9 @@ Icons are also available as standalone files under multiple resolutions:
           <br/>
           <span>cadgerfeast</span>
         </a>
-	<a href="https://github.com/zeromero-dev">
+      </td>
+      <td>
+        <a href="https://github.com/zeromero-dev">
           <img src="https://github.com/zeromero-dev.png?size=100" alt="zeromdero-dev" width="100px">
           <br/>
           <span>zeromero-dev</span>
