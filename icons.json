@@ -49,6 +49,11 @@
       "anatomy"
     ]
   },
+  "facebook": {
+    "tags": [
+      "social"
+    ]
+  },
   "floppy-disk": {
     "tags": [
       "storage"
@@ -57,6 +62,12 @@
   "gold-coin": {
     "tags": [
       "currency"
+    ]
+  },
+  "github": {
+    "tags": [
+      "code",
+      "social"
     ]
   },
   "home": {
@@ -68,6 +79,11 @@
     "tags": [
       "code",
       "browsers"
+    ]
+  },
+  "linkedin": {
+    "tags": [
+      "social"
     ]
   },
   "phone": {
@@ -94,6 +110,26 @@
   "silver-coin": {
     "tags": [
       "currency"
+    ]
+  },
+  "skull": {
+    "tags": [
+      "anatomy"
+    ]
+  },
+  "twitter": {
+    "tags": [
+      "social"
+    ]
+  },
+  "whatsapp": {
+    "tags": [
+      "social"
+    ]
+  },
+  "youtube": {
+    "tags": [
+      "social"
     ]
   }
 }

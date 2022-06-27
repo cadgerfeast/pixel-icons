@@ -19,9 +19,9 @@ npm install --save @pixel/icons
 <table>
 	<tbody>
 		<tr>
-			<td align="center"><img src="./png-150/home.png"/></td>
-      <td align="center"><img src="./png-150/dino.png"/></td>
-      <td align="center"><img src="./png-150/floppy-disk.png"/></td>
+			<td align="center"><img src="./png-128/home.png"/></td>
+      <td align="center"><img src="./png-128/dino.png"/></td>
+      <td align="center"><img src="./png-128/floppy-disk.png"/></td>
 	</tbody>
 </table>
 
@@ -43,14 +43,18 @@ See full icon list [here.](./ICONS.md "Full icon list")
 
 Icons are also available as standalone files under multiple resolutions:
 
-* `png-15`: 15px
-* `png-150`: 150px
-* `png-1500`: 1500px
-* `svg`: 150px
+* `png-16`: 16px
+* `png-32`: 32px
+* `png-64`: 64px
+* `png-128`: 128px
+* `png-256`: 256px
+* `png-512`: 512px
+* `png-1024`: 1024px
+* `svg`: 256px
 
 ``` html
 <!-- Usage -->
-<img src="@pixel/icons/png-150/home.png" alt="home"/>
+<img src="@pixel/icons/png-128/home.png" alt="home"/>
 <img src="@pixel/icons/svg/home.svg" alt="home"/>
 ```
 
@@ -64,6 +68,13 @@ Icons are also available as standalone files under multiple resolutions:
           <img src="https://github.com/cadgerfeast.png?size=100" alt="cadgerfeast" width="100px">
           <br/>
           <span>cadgerfeast</span>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/zeromero-dev">
+          <img src="https://github.com/zeromero-dev.png?size=100" alt="zeromero-dev" width="100px">
+          <br/>
+          <span>zeromero-dev</span>
         </a>
       </td>
     </tr>

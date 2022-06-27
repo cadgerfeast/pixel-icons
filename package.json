@@ -1,7 +1,7 @@
 {
   "name": "@pixel/icons",
   "description": "Pixel Styled Icons",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "dist/icons.json",
   "types": "dist/icons.d.ts",
   "scripts": {
@@ -26,15 +26,20 @@
   "files": [
     "dist",
     "fonts",
-    "png-15",
-    "png-150",
-    "png-1500",
+    "png-16",
+    "png-32",
+    "png-64",
+    "png-128",
+    "png-256",
+    "png-512",
+    "png-1024",
     "svg"
   ],
   "devDependencies": {
     "eslint": "7.4.0",
+    "fs-extra": "10.1.0",
     "jest": "26.6.3",
-    "sharp": "0.25.4",
-    "svgtofont": "3.10.0"
+    "sharp": "0.30.7",
+    "svgtofont": "3.17.7"
   }
 }

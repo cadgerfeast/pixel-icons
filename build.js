@@ -1,16 +1,15 @@
-const fs = require('fs');
+// Helpers
+const fs = require('fs-extra');
 const path = require('path');
 const sharp = require('sharp');
 const svgtofont = require('svgtofont');
-
-const icons15Path = path.resolve(__dirname, 'png-15');
-const icons150Path = path.resolve(__dirname, 'png-150');
-const icons1500Path = path.resolve(__dirname, 'png-1500');
-const iconsSvgPath = path.resolve(__dirname, 'svg');
+// Constants
+const icons = require('./icons.json');
+const iconSizes = [32, 64, 128, 256, 512, 1024];
+const iconPngPath = path.resolve(__dirname, 'png-16');
+const iconSvgPath = path.resolve(__dirname, 'svg');
 const fontsPath = path.resolve(__dirname, 'fonts');
 const distPath = path.resolve(__dirname, 'dist');
-
-const icons = require('./icons.json');
 
 let declaration = `declare interface PixelSvgData {
   svg: string;
@@ -27,7 +26,7 @@ declare module '@pixel/icons' {
   export default value;
 }`;
 
-function rimraf (folder) {
+function rimraf(folder) {
   if (fs.existsSync(folder)) {
     fs.readdirSync(folder).forEach((entry) => {
       const currentPath = path.join(folder, entry);
@@ -42,14 +41,14 @@ function rimraf (folder) {
 }
 module.exports.rimraf = rimraf;
 
-function generateList (list) {
+function generateList(list) {
   let markdownContent = '# Icon list\n\n';
   markdownContent += '<table>\n\t<tbody>\n';
   markdownContent += '\t\t<tr>\n';
   let count = 0;
   for (const icon in list) {
     count++;
-    markdownContent += `\t\t\t<td align="center"><img src="./png-150/${icon}.png" width="100px"/><br/><span>${icon}</span><br/><span>[${icons[icon].tags.join(', ')}]</span></td>\n`;
+    markdownContent += `\t\t\t<td align="center"><img src="./png-128/${icon}.png" width="100px"/><br/><span>${icon}</span><br/><span>[${icons[icon].tags.join(', ')}]</span></td>\n`;
     if (count > 7) {
       markdownContent += '\t\t</tr>\n';
       markdownContent += '\t\t<tr>\n';
@@ -60,17 +59,18 @@ function generateList (list) {
   fs.writeFileSync(path.resolve(__dirname, 'ICONS.md'), markdownContent);
 }
 
-async function createIcon (icon, destSvg, dest150, dest1500) {
-  const src = path.resolve(icons15Path, icon);
-  const i150FilePath = path.resolve(dest150, icon);
-  await sharp(src).resize(150, 150, { kernel: 'nearest' }).toFile(i150FilePath);
-  const i1500FilePath = path.resolve(dest1500, icon);
-  await sharp(src).resize(1500, 1500, { kernel: 'nearest' }).toFile(i1500FilePath);
-  const iSvgFilePath = path.resolve(destSvg, icon.replace(/.png/g, '.svg'));
-  return await generateSvg(icon.slice(0, -4), src, iSvgFilePath);
+async function createIcon(icon) {
+  const src = path.resolve(iconPngPath, icon);
+  for (const size of iconSizes) {
+    const destPath = path.resolve(__dirname, `png-${size}/${icon}`);
+    await sharp(src).resize(size, size, { kernel: 'nearest' }).toFile(destPath);
+  }
+  const iSvgFilePath = path.resolve(__dirname, `svg/${icon.replace(/.png/g, '.svg')}`);
+  return await generateSvg(src, iSvgFilePath);
 }
 
-async function generateSvg (name, src, dest) {
+async function generateSvg(src, dest) {
+  const factor = Math.pow(2, 4);
   return new Promise((resolve, reject) => {
     sharp(src).raw()
       .toBuffer((err, buffer, img) => {
@@ -78,7 +78,7 @@ async function generateSvg (name, src, dest) {
         const svgData = {
           colors: []
         };
-        let svgContent = `<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" width="${img.width * 10}" height="${img.height * 10}">\n`;
+        let svgContent = `<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" viewBox="0 0 ${img.height * factor} ${img.height * factor}" width="${img.width * factor}" height="${img.height * factor}">\n`;
         const colors = [];
         for (let i = 0; i < img.height; i++) {
           for (let j = 0; j < img.width; j++) {
@@ -89,8 +89,8 @@ async function generateSvg (name, src, dest) {
               if (index === -1) {
                 colors.push(style);
                 index = colors.indexOf(style);
-              } 
-              svgContent += `\t<rect fill="${style}" x="${j * 10}" y="${i * 10}" width="10" height="10"/>\n`;
+              }
+              svgContent += `\t<rect fill="${style}" x="${j * factor}" y="${i * factor}" width="${factor}" height="${factor}"/>\n`;
             }
           }
         }
@@ -105,19 +105,17 @@ async function generateSvg (name, src, dest) {
   });
 }
 
-async function main () {
+async function main() {
   try {
-    rimraf(iconsSvgPath);
-    rimraf(icons150Path);
-    rimraf(icons1500Path);
+    for (const size of iconSizes) {
+      fs.emptyDirSync(path.resolve(__dirname, `png-${size}`));
+    }
+    fs.emptyDirSync(iconSvgPath);
     // Building icons
-    fs.mkdirSync(iconsSvgPath);
-    fs.mkdirSync(icons150Path);
-    fs.mkdirSync(icons1500Path);
     const svgFiles = [];
     const finalIconList = {};
     const iconList = Object.keys(icons);
-    const iconFiles = fs.readdirSync(icons15Path);
+    const iconFiles = fs.readdirSync(iconPngPath);
     for (let i = iconFiles.length; i--;) {
       const iconName = iconFiles[i].slice(0, -4);
       if (iconList.indexOf(iconName) === -1) {
@@ -136,7 +134,7 @@ async function main () {
     }
     declaration += '\n\ndeclare enum PixelIconList {';
     for (const icon in finalIconList) {
-      const { svgIcon, svgData } = await createIcon(`${icon}.png`, iconsSvgPath, icons150Path, icons1500Path);
+      const { svgIcon, svgData } = await createIcon(`${icon}.png`);
       finalIconList[icon].data = svgData;
       svgFiles.push(svgIcon);
       declaration += `\n\t'${icon}' = '${icon}',`;
@@ -159,12 +157,20 @@ async function main () {
       rimraf(fontsPath);
     }
     svgtofont({
-      src: iconsSvgPath,
+      src: iconSvgPath,
       dist: fontsPath,
       fontName: 'PixelIcons',
       classNamePrefix: 'pi',
       css: {
-        fontSize: '30px'
+        fontSize: '16px'
+      },
+      svgicons2svgfont: {
+        fontHeight: 1000,
+        normalize: true
+      },
+      website: {
+        title: 'Pixel Icons',
+        logo: path.resolve(__dirname, 'svg/github.svg')
       }
     });
   } catch (error) {

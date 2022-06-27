@@ -1,15 +1,15 @@
 @font-face {font-family: "PixelIcons";
-  src: url('PixelIcons.eot?t=1620134252356'); /* IE9*/
-  src: url('PixelIcons.eot?t=1620134252356#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url("PixelIcons.woff2?t=1620134252356") format("woff2"),
-  url("PixelIcons.woff?t=1620134252356") format("woff"),
-  url('PixelIcons.ttf?t=1620134252356') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('PixelIcons.svg?t=1620134252356#PixelIcons') format('svg'); /* iOS 4.1- */
+  src: url('PixelIcons.eot?t=1656355405558'); /* IE9*/
+  src: url('PixelIcons.eot?t=1656355405558#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("PixelIcons.woff2?t=1656355405558") format("woff2"),
+  url("PixelIcons.woff?t=1656355405558") format("woff"),
+  url('PixelIcons.ttf?t=1656355405558') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('PixelIcons.svg?t=1656355405558#PixelIcons') format('svg'); /* iOS 4.1- */
 }
 
 [class^="pi-"], [class*=" pi-"] {
   font-family: 'PixelIcons' !important;
-  font-size: 30px;
+  font-size: 16px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,15 +25,22 @@
 .pi-diamond:before { content: "\ea08"; }
 .pi-dino:before { content: "\ea09"; }
 .pi-eye:before { content: "\ea0a"; }
-.pi-floppy-disk:before { content: "\ea0b"; }
-.pi-gold-coin:before { content: "\ea0c"; }
-.pi-home:before { content: "\ea0d"; }
-.pi-internet-explorer:before { content: "\ea0e"; }
-.pi-phone:before { content: "\ea0f"; }
-.pi-pipe-top:before { content: "\ea10"; }
-.pi-pizza-slice:before { content: "\ea11"; }
-.pi-refresh:before { content: "\ea12"; }
-.pi-silver-coin:before { content: "\ea13"; }
+.pi-facebook:before { content: "\ea0b"; }
+.pi-floppy-disk:before { content: "\ea0c"; }
+.pi-github:before { content: "\ea0d"; }
+.pi-gold-coin:before { content: "\ea0e"; }
+.pi-home:before { content: "\ea0f"; }
+.pi-internet-explorer:before { content: "\ea10"; }
+.pi-linkedin:before { content: "\ea11"; }
+.pi-phone:before { content: "\ea12"; }
+.pi-pipe-top:before { content: "\ea13"; }
+.pi-pizza-slice:before { content: "\ea14"; }
+.pi-refresh:before { content: "\ea15"; }
+.pi-silver-coin:before { content: "\ea16"; }
+.pi-skull:before { content: "\ea17"; }
+.pi-twitter:before { content: "\ea18"; }
+.pi-whatsapp:before { content: "\ea19"; }
+.pi-youtube:before { content: "\ea1a"; }
 
 $pi-bronze-coin: "\ea01";
 $pi-chat: "\ea02";
@@ -45,13 +52,20 @@ $pi-cross: "\ea07";
 $pi-diamond: "\ea08";
 $pi-dino: "\ea09";
 $pi-eye: "\ea0a";
-$pi-floppy-disk: "\ea0b";
-$pi-gold-coin: "\ea0c";
-$pi-home: "\ea0d";
-$pi-internet-explorer: "\ea0e";
-$pi-phone: "\ea0f";
-$pi-pipe-top: "\ea10";
-$pi-pizza-slice: "\ea11";
-$pi-refresh: "\ea12";
-$pi-silver-coin: "\ea13";
+$pi-facebook: "\ea0b";
+$pi-floppy-disk: "\ea0c";
+$pi-github: "\ea0d";
+$pi-gold-coin: "\ea0e";
+$pi-home: "\ea0f";
+$pi-internet-explorer: "\ea10";
+$pi-linkedin: "\ea11";
+$pi-phone: "\ea12";
+$pi-pipe-top: "\ea13";
+$pi-pizza-slice: "\ea14";
+$pi-refresh: "\ea15";
+$pi-silver-coin: "\ea16";
+$pi-skull: "\ea17";
+$pi-twitter: "\ea18";
+$pi-whatsapp: "\ea19";
+$pi-youtube: "\ea1a";
 
