@@ -1,11 +1,11 @@
 @font-face {
   font-family: "PixelIcons";
-  src: url('PixelIcons.eot?t=1656355405558'); /* IE9*/
-  src: url('PixelIcons.eot?t=1656355405558#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url("PixelIcons.woff2?t=1656355405558") format("woff2"),
-  url("PixelIcons.woff?t=1656355405558") format("woff"),
-  url('PixelIcons.ttf?t=1656355405558') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('PixelIcons.svg?t=1656355405558#PixelIcons') format('svg'); /* iOS 4.1- */
+  src: url('PixelIcons.eot?t=1656355924291'); /* IE9*/
+  src: url('PixelIcons.eot?t=1656355924291#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("PixelIcons.woff2?t=1656355924291") format("woff2"),
+  url("PixelIcons.woff?t=1656355924291") format("woff"),
+  url('PixelIcons.ttf?t=1656355924291') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('PixelIcons.svg?t=1656355924291#PixelIcons') format('svg'); /* iOS 4.1- */
 }
 
 [class^="pi-"], [class*=" pi-"] {

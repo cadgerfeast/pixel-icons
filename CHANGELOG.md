@@ -1,9 +1,15 @@
 # Changelog
 
-## [0.0.13](https://github.com/cadgerfeast/pixel-icons/compare/0.0.12...0.0.13)
+## [0.0.14](https://github.com/cadgerfeast/pixel-icons/compare/0.0.13...0.0.14)
+
+- migrate to 16 factor, update dependencies, add few icons [`e13a60a`](https://github.com/cadgerfeast/pixel-icons/commit/e13a60abf7b104c1ee5c7c3257d8a34e45b46407)
+- fix ci, bump version 0.0.14 [`65f55c5`](https://github.com/cadgerfeast/pixel-icons/commit/65f55c5023d85e5eac98ce73ed41fb6a0ccf2358)
+
+## [0.0.13](https://github.com/cadgerfeast/pixel-icons/compare/0.0.12...0.0.13) (2021-05-04)
 
 - update build [`7c8bab8`](https://github.com/cadgerfeast/pixel-icons/commit/7c8bab8f590a28eec3e14b020ceaf35856e83499)
 - add cross icon, bump version 0.13.0 [`273798b`](https://github.com/cadgerfeast/pixel-icons/commit/273798baba68f692f29626936d0408eb7573048f)
+- Release @pixel/icons@0.0.13 [`99d7ff8`](https://github.com/cadgerfeast/pixel-icons/commit/99d7ff8b1636e3822e04462f588b3ae4a85d7649)
 
 ## [0.0.12](https://github.com/cadgerfeast/pixel-icons/compare/0.0.11...0.0.12) (2021-04-07)
 
